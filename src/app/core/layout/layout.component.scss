@@ -1,0 +1,55 @@
+:host {
+  width: 100%;
+}
+
+ol.stepper {
+  --default-b: lightgrey;
+  --default-c: black;
+  --active-b: #1565c0;
+  --active-c: white;
+  --circle: 1em;
+  --b: 3px;
+
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  background: linear-gradient(var(--default-b) 0 0) no-repeat 50%
+    calc((var(--circle) - var(--b)) / 2) / 100% var(--b);
+  padding: 0;
+  font-size: 22px;
+  width: 100%;
+  color: var(--default-b);
+  margin-bottom: 50px;
+}
+
+ol.stepper li {
+  display: grid;
+  position: relative;
+  place-items: center;
+  &:first-child {
+    place-items: start;
+  }
+  &:last-child {
+    place-items: end;
+  }
+  cursor: pointer;
+}
+
+ol.stepper li::before {
+  content: "";
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1;
+  height: var(--circle);
+  border: 3px solid var(--default-b);
+  border-radius: 50%;
+  background-color: var(--active-c);
+}
+
+li.active {
+  color: var(--active-b);
+}
+
+ol.stepper li.active::before {
+  border-color: var(--active-b);
+}

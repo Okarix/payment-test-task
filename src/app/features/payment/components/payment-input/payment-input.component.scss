@@ -1,0 +1,22 @@
+.payment-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-prefix {
+  border: 1px solid #dee2e6;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(196, 193, 193, 0.4);
+}
+
+.payment-input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+}

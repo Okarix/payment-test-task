@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@use "bootstrap/scss/bootstrap";
+@use "bootstrap-icons/font/bootstrap-icons.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.two-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #a9adb1;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.two {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}

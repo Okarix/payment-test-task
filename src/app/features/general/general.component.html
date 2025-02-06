@@ -1,0 +1,36 @@
+<form class="form">
+  <h1 class="h1">General information</h1>
+  <span class="subtitle">Let's out the basics information of the contract</span>
+
+  <app-dropdown
+    [label]="'Team'"
+    [items]="['Filllo Team', 'Other team', 'Other team']"
+  ></app-dropdown>
+
+  <app-input
+    [label]="'Contract Name'"
+    [placeholder]="'Contract for Product Design'"
+  ></app-input>
+
+  <div class="two-inputs">
+    <app-dropdown
+      [items]="['Canada', 'USA', 'Russia']"
+      [label]="'Contractor`s country'"
+    ></app-dropdown>
+    <app-dropdown
+      [label]="'State'"
+      [items]="['Toronto', 'New York', 'Moscow']"
+    ></app-dropdown>
+  </div>
+
+  <app-dropdown
+    label="Job title"
+    [items]="['Product Designer', 'Other', 'Other']"
+  ></app-dropdown>
+
+  <app-text-area [label]="'Area of Work'"></app-text-area>
+
+  <app-date-picker [label]="'Start Date'"></app-date-picker>
+
+  <app-button-big [text]="'Next'"></app-button-big>
+</form>

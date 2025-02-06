@@ -1,0 +1,21 @@
+<label class="label">{{ label }}</label>
+
+<form class="row row-cols-sm-auto">
+  <div class="col-12 w-100">
+    <div class="input-group">
+      <input
+        class="form-control date-input"
+        placeholder="yyyy-mm-dd"
+        name="dp"
+        [(ngModel)]="model"
+        ngbDatepicker
+        #d="ngbDatepicker"
+      />
+      <button
+        class="date-btn btn btn-outline bi bi-calendar3"
+        (click)="d.toggle()"
+        type="button"
+      ></button>
+    </div>
+  </div>
+</form>

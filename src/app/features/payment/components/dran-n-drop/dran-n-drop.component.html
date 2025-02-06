@@ -1,0 +1,17 @@
+<div
+  class="drop-zone"
+  cdkDropList
+  (cdkDropListDropped)="onDrop($event)"
+  [class.drag-over]="dragOver"
+  (dragover)="onDragOver($event)"
+  (dragleave)="onDragLeave()"
+  (drop)="onDrop($event)"
+>
+  <p *ngIf="!file">
+    Drag & Drop or
+    <label class="drag-label" for="fileInput">Choose file</label> to upload
+  </p>
+  <p *ngIf="file">Uploaded: {{ file!.name }}</p>
+
+  <input id="fileInput" type="file" (change)="onFileSelect($event)" hidden />
+</div>

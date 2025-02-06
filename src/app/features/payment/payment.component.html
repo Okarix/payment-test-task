@@ -1,0 +1,30 @@
+<form class="form">
+  <h1 class="h1">Add Payment Information</h1>
+  <span class="subtitle"
+    >Fill out the payment information for this contract</span
+  >
+
+  <app-dropdown
+    [label]="'Payment Currency'"
+    [items]="['USD', 'RUB', 'KZT']"
+    (selected)="updateCurrency($event)"
+  ></app-dropdown>
+
+  <div class="two">
+    <p class="text">Milestones</p>
+    <app-button-small [text]="'Add Milestone'"></app-button-small>
+  </div>
+
+  <app-dropdown
+    [label]="'Milestone Name'"
+    [items]="['Complete Homepage', 'Other', 'Other']"
+  ></app-dropdown>
+
+  <app-text-area [label]="'Work Description'"></app-text-area>
+
+  <app-payment-input [currency]="currency"></app-payment-input>
+
+  <app-dran-n-drop></app-dran-n-drop>
+
+  <app-button-big [text]="'Next'"></app-button-big>
+</form>

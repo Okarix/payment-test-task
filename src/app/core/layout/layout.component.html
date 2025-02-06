@@ -1,0 +1,14 @@
+<ol class="stepper">
+  @for(step of steps; track $index) {
+  <li
+    (click)="setActiveStep($index)"
+    [ngClass]="{ active: $index === activeStep }"
+  >
+    {{ step }}
+  </li>
+  }
+</ol>
+
+<app-general *ngIf="activeStep === 0"></app-general>
+<app-payment *ngIf="activeStep === 1"></app-payment>
+<app-benefits *ngIf="activeStep === 2"></app-benefits>

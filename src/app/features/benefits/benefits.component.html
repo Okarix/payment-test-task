@@ -1,0 +1,26 @@
+<form class="form">
+  <h1 class="h1">Compliance & Others</h1>
+  <span class="subtitle">Fill out the compliance details</span>
+
+  <app-date-picker [label]="'Terminate Date'"></app-date-picker>
+
+  <app-dropdown
+    label="Notice Period"
+    [items]="['10 weeks', '9 weeks', '7 weeks']"
+  ></app-dropdown>
+
+  <div class="two">
+    <p class="text">Stack offer</p>
+    <app-button-small [text]="'Add'"></app-button-small>
+  </div>
+
+  <p class="benefit-text">
+    Contact with Lorem, ipsum dolor sit amet consectetur adipisicing
+    elit.Blanditiis excepturi vero dolorem accusantium porro velit incidunt
+    adipisci
+  </p>
+
+  <app-checkbox></app-checkbox>
+
+  <app-button-big [text]="'Create Contract'"></app-button-big>
+</form>
