@@ -25,3 +25,6 @@ npm install -g @angular/cli
 ```bash
 npm start
 ```
+
+## Ссылка для просмотра
+https://payment-test-task-3pkw-dz9r23jue-okarixs-projects.vercel.app/
